@@ -92,6 +92,22 @@ body {
     object-fit: cover;
     display: flex;
 }
+.div1 [class*="linksvg"]{
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 10%;
+  padding: 5px 11px;
+}
+.div1 a svg {
+  fill: transparent;
+}
+.div1 .linksvg1 {
+  right: 75px;
+}
+.div1 .linksvg2 {
+  right: 25px;
+}
 .div2 {
     background-color: white;
     height: 100px;
