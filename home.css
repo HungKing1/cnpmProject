@@ -70,16 +70,88 @@ body {
     white-space: nowrap; /* Prevents the text from wrapping to a new line */
 }
 .div1 .navBar {
-    position: absolute;
-    top: 10%;
-    left: 1%;
-    font-size: 13px;
+  position: absolute; /* Đặt nav lên trên video */
+  top: 10%; /* Đặt vị trí của nav cách một chút từ đầu trang */
+  left: 1%;
+  font-size: 13px;
+  z-index: 100; /* Đảm bảo nav luôn hiển thị trên video */
+  background-color: rgba(0, 0, 0, 0.5); /* Thêm màu nền mờ cho menu nếu cần */
+  padding: 10px;
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
 }
 
-.div1 .navBar a {
-    padding: 14px;
-    border: none;
+.div1 .menu-icon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.div1 .menu-toggle {
+  display: none;
+}
+
+.div1 .menu-a {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Màu nền tối cho menu */
+  padding: 10px 0;
+}
+
+.div1 .menu-a a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  background-color: red;
+}
+
+.div1 .menu-a a:hover {
+  background-color: chartreuse;
+}
+
+.menu-toggle:checked + .menu-icon + .menu-a {
+  display: block; /* Hiển thị menu khi checkbox được chọn */
+}
+
+@media (min-width: 768px) {
+  .div1 .navBar {
+    top: 10%;
+    left: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .div1 .menu-a {
+    display: flex;
+    position: static;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .div1 .menu-a a {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: transparent;
     color: white;
+  }
+
+  .div1 .menu-toggle,
+  .div1 .menu-icon {
+    display: none; /* Ẩn checkbox và biểu tượng menu khi màn hình đủ rộng */
+  }
 }
 .div1 .img {
     position: absolute;
@@ -340,4 +412,42 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
   fill: #898e4a;
+}
+.div7 {
+  position: relative;
+  width: 100vw;
+  height: auto;
+  background-color: #aaae5a;
+  display: flex;
+  align-items: center; /* Thêm padding để tạo khoảng cách từ biên */
+}
+
+.div7 div {
+  max-width: 30%;
+  align-content: center;
+  color: white;
+  margin-bottom: 30px;
+}
+.div7 .menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.div7 h2 {
+  font-size: 25px;
+}
+.div7 img {
+  position: absolute;
+  width: 220px;
+  height: 80px;
+  object-fit: cover;
+  margin: 40px 20px;
+  display: flex;
+}
+.div7  .newletter {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+.div7 .menu {
+  padding-right: 200px;
 }
