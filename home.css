@@ -174,7 +174,7 @@ body {
 .div1 a svg {
   fill: transparent;
 }
-.div1 .linksvg1 {
+.div1 .linksvg1  {
   right: 75px;
 }
 .div1 .linksvg2 {
@@ -413,16 +413,16 @@ body {
   margin-bottom: 10px;
   fill: #898e4a;
 }
-.div7 {
+/* .div7 {
   position: relative;
   width: 100vw;
   height: auto;
   background-color: #aaae5a;
   display: flex;
-  align-items: center; /* Thêm padding để tạo khoảng cách từ biên */
-}
+  align-items: center; 
+}  */
 
-.div7 div {
+/* .div7 div {
   max-width: 30%;
   align-content: center;
   color: white;
@@ -450,4 +450,98 @@ body {
 }
 .div7 .menu {
   padding-right: 200px;
+}  */
+.navbar {
+  position: absolute;
+  top: 10%; /* Khoảng cách từ trên cùng của màn hình */
+  left: 0%;
+  width: 100%;
+  z-index: 2; /* Đảm bảo navbar nằm trên video */
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font: 14.7px;
+  padding: 5px 11px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+.footer {
+  background-color: #cfd39f;
+  position: relative;
+  height: auto;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.footer img {
+  display: block; /* Đảm bảo ảnh là block-level */
+  margin-top: 30px;
+  position: absolute; /* Loại bỏ absolute để ảnh không đè lên nội dung */
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước vùng chứa */
+  height: auto; /* Giữ tỷ lệ ảnh */
+}
+
+.footer .container {
+  padding-top: 150px;
+}
+.footer .container .row {
+  display: flex;
+  align-items: flex-start;
+}
+.footer .container .row div {
+  max-width: 30%;
+  text-align: left; /* Căn trái nội dung */
+  margin: 0 5px; /* Khoảng cách ngang giữa các cột */
+  padding-left: 15px; /* Tạo khoảng cách lề trái bên trong */
+  color: #898e4a;
+}
+.footer .container .row div:nth-child(1) {
+  margin-right: 100px; /* Khoảng cách giữa cột 1 và cột 2 */
+}
+
+.footer .container .row div:nth-child(2) {
+  margin-right: 350px; /* Khoảng cách giữa cột 2 và cột 3 */
+}
+
+.footer .container .row div:not(h2, h5) {
+  font-size: 20px;
+}
+.footer h2 {
+  font-size: 50px;
+  color: white;
+}
+.footer h5 {
+  font-size: 30px;
+}
+.footer .list-unstyled .text-white {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+.list-unstyled {
+  list-style: none; /* Loại bỏ ký hiệu mặc định của danh sách */
+  padding: 0; /* Loại bỏ khoảng cách thụt vào mặc định */
+  margin: 0; /* Xóa khoảng cách mặc định */
+}
+.footer .text-dark {
+  color: #898e4a;
+}
+
+.footer .list-unstyled li {
+  margin: 25px 0px;
+}
+.footer .text-center {
+  color: white;
+  font-size: 20px;
 }
