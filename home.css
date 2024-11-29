@@ -318,23 +318,35 @@ body {
 .image-container .hover-image:hover {
   opacity: 1;
 }
-.div5 h2 {
-  font-size: 29px;
-  width: 100%;
-  color: #17171E;
-  display: block;
-  margin-bottom: 20px;
-}
 .div5 {
   display: flex;
   flex-wrap: wrap;
-}
-.div5 {
-  display: flex;
   justify-content: center; /* Căn giữa toàn bộ nội dung */
   align-items: flex-start; /* Đảm bảo tất cả ảnh cùng hàng */
   padding: 0 20px; /* Khoảng cách từ lề trái và lề phải */
   margin-bottom: 35px;
+}
+.div5 .spanChangeImg {
+  font-size: 16px;
+  margin-right: 20px  ;
+  text-align: center;
+  color: #17171E;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.div5 .mix {
+  padding-left: 40%;
+}
+.div5 .plant {
+  padding-right: 40%;
+}
+.div5 .mix:hover {
+  opacity: 80%;
+  text-decoration: underline;
+}
+.div5 .plant:hover{
+  opacity: 80%;
+  text-decoration: underline;
 }
 .div5 .divContainImage {
   position: relative;
@@ -544,4 +556,20 @@ body {
 .footer .text-center {
   color: white;
   font-size: 20px;
+}
+.footer .form-control {
+  height: 20px;
+  width: 89%;
+  border: none;
+  font-size: 15px;
+  color: #898e4a;
+  padding: 5px 2px;
+  outline: none;
+}
+.footer .btn-email {
+  background-color: transparent;
+  border: none;
+  color: #898e4a;
+  font-size: 15px;
+  cursor: pointer;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Flower Web</title>
     <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
 </head>
 <body>
     <div class="div0">
@@ -30,7 +31,7 @@
             <!-- Nút để điều chỉnh khi màn hình nhỏ -->
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button> -->   
             <div class="d-none d-lg-block">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
@@ -94,33 +95,34 @@
         </div>
     </div>
     <div class="div5">
-        <h2>Mixed Bouquets</h2>
+        <span class="spanChangeImg mix" id="mix" onclick="changeImg('mix')">Mixed Bouquets</span> 
+        <span class="spanChangeImg plant" id="plant" onclick="changeImg('plant')">Plants</span>
         <div class="divContainImage">
             <a href="link1.html" class="image-container">
-                <img src="./img/mix1_0.webp" class="default-image" alt="Natives">
-                <img src="./img/mix1_1.webp" class="hover-image" alt="Natives Hover">
-                <a href="link1.html"><span>Pick Me Up</span><br><span>From$70.00</span></a>
+                <img id="move-img" src="./img/mix1_0.webp" class="default-image" alt="Natives">
+                <img id="move-img" src="./img/mix1_1.webp" class="hover-image" alt="Natives Hover">
+                <a href="link1.html"><span id="span-anh1.1">Pick Me Up</span><br><span id="span-anh1.2">From$70.00</span></a>
             </a>
         </div>
         <div class="divContainImage">
             <a href="link2.html" class="image-container">
-                <img src="./img/mix2_0.webp" class="default-image" alt="Long Stem Red Roses">
-                <img src="./img/mix2_1.webp" class="hover-image" alt="Roses Hover">
-                <a href="link2.html"><span>Sunflower Bouquet</span><br><span>From$13.00</span></a>
+                <img id="move-img" src="./img/mix2_0.webp" class="default-image" alt="Long Stem Red Roses">
+                <img id="move-img" src="./img/mix2_1.webp" class="hover-image" alt="Roses Hover">
+                <a href="link2.html"><span id="span-anh2.1">Sunflower Bouquet</span><br><span id="span-anh2.2">From$13.00</span></a>
             </a>
         </div>
         <div class="divContainImage">
             <a href="link3.html" class="image-container">
-                <img src="./img/mix3_0.webp" class="default-image" alt="Oriental Lilies">
-                <img src="./img/mix3_1.webp" class="hover-image" alt="Lilies Hover">
-                <a href="link3.html"><span>Kellie Bouquet</span><br><span>From$75.00</span></a>
+                <img id="move-img" src="./img/mix3_0.webp" class="default-image" alt="Oriental Lilies">
+                <img id="move-img" src="./img/mix3_1.webp" class="hover-image" alt="Lilies Hover">
+                <a href="link3.html"><span id="span-anh3.1">Kellie Bouquet</span><br><span id="span-anh3.2">From$75.00</span></a>
             </a>
         </div>
         <div class="divContainImage">
             <a href="link4.html" class="image-container">
-                <img src="./img/mix4_0.webp" class="default-image" alt="Chrysanthemums">
-                <img src="./img/mix4_1.webp" class="hover-image" alt="Chrysanthemums Hover">
-                <a href="link4.html"><span>Mixed Roses</span><br><span>From$52.00</span></a>
+                <img id="move-img" src="./img/mix4_0.webp" class="default-image" alt="Chrysanthemums">
+                <img id="move-img" src="./img/mix4_1.webp" class="hover-image" alt="Chrysanthemums Hover">
+                <a href="link4.html"><span id="span-anh4.1">Mixed Roses</span><br><span id="span-anh4.2">From$52.00</span></a>
             </a>
         </div>
     </div>
@@ -227,7 +229,7 @@
                         <!-- <h2 class="pb-3" style="font-family:'Georgia', serif;">The Flower Web</h2> -->
                         <h5>Newsletter</h5>
                         <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
-                        <input type="email" class="form-control mb-2" placeholder="Email" style="background-color: rgba(0,0,0,0);"> <br>
+                        <input type="email" class="form-control mb-2" placeholder="Email" style="background-color: rgba(0,0,0,0);"><button class="btn-email">JOIN</button>
                         <small>This site is protected by Captcha and the Captcha Privacy Policy and Terms of Service apply.</small>
                     </div>
       
