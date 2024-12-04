@@ -33,3 +33,21 @@ function changeImg(nameClick) {
         }
     });
 }
+
+function submitForm(event) {
+    event.preventDefault();
+    let email = document.getElementById('getEmail').value;
+    localStorage.setItem('email', email);
+    window.location.href = './continue-log-in.html';
+}
+
+window.onload = function() {
+    // Kiểm tra nếu trang hiện tại là 'continue-log-in.html'
+    if (window.location.pathname.includes('continue-log-in.html')) {
+        let email = localStorage.getItem('email');  // Lấy email từ localStorage
+        if (email) {
+            let contentSendTo = document.querySelector('.describe-login');
+            contentSendTo.innerHTML = `Sent to ${email}`;  // Cập nhật nội dung email
+        }
+    }
+};

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in - The Flower Web</title>
-    <link rel="stylesheet" href="log-in.css">
+    <link rel="stylesheet" href="continue-log-in.css">
     <script src="home.js"></script>
 </head>
 <body>
@@ -16,15 +16,18 @@
                 </a> 
             </div>           
             <h2 class="ui-heading">
-                Log in
+                Enter Code
             </h2>
             <p class="describe-login">
-                Enter your email and we'll send you a login code
+                Sent to 
             </p>
-            <input type="email" placeholder="Email" class="input-login" id="getEmail">
-            <button class="button-login" onclick="submitForm(event)">
-                <span class="content-button">Continue</span>
-            </button>            
+            <input type="text" placeholder="6-digit code" class="input-login">
+            <a href="./login.html" class="try-another-email">
+                Login with a diffrent email
+            </a>
+            <button class="button-login" onclick="window.location.href='./home.html'">
+                <span class="content-button">Submit</span>
+            </button>
         </div>
     </div>
 </body>

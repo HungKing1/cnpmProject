@@ -176,6 +176,7 @@ body {
 }
 .div1 .linksvg1  {
   right: 75px;
+
 }
 .div1 .linksvg2 {
   right: 25px;
@@ -333,6 +334,9 @@ body {
   color: #17171E;
   margin-bottom: 20px;
   cursor: pointer;
+}
+.mix {
+  text-decoration: underline;
 }
 .div5 .mix {
   padding-left: 40%;

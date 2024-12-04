@@ -49,6 +49,21 @@ body {
     border: solid gray 1px;
     cursor: pointer;
 }
+.input-login::placeholder {
+    color: black;
+}   
+.try-another-email {
+    text-decoration: none;
+    color: #c5aa76;
+    font: 15px;
+    display: flex;
+    margin-top: 21px;
+    margin-left: 4px;
+}
+.try-another-email:hover {
+    opacity: 70%;
+    color: #493f2c;
+}
 .button-login {
     width: 432px;
     height: 44px;
