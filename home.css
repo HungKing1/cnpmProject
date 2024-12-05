@@ -111,47 +111,8 @@ body {
   text-decoration: none;
   background-color: red;
 }
-
 .div1 .menu-a a:hover {
   background-color: chartreuse;
-}
-
-.menu-toggle:checked + .menu-icon + .menu-a {
-  display: block; /* Hiển thị menu khi checkbox được chọn */
-}
-
-@media (min-width: 768px) {
-  .div1 .navBar {
-    top: 10%;
-    left: 1%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: static;
-    background-color: transparent;
-    padding: 0;
-  }
-
-  .div1 .menu-a {
-    display: flex;
-    position: static;
-    width: auto;
-    padding: 0;
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  .div1 .menu-a a {
-    margin: 0 10px;
-    padding: 10px;
-    background-color: transparent;
-    color: white;
-  }
-
-  .div1 .menu-toggle,
-  .div1 .menu-icon {
-    display: none; /* Ẩn checkbox và biểu tượng menu khi màn hình đủ rộng */
-  }
 }
 .div1 .img {
     position: absolute;
@@ -176,11 +137,14 @@ body {
 }
 .div1 .linksvg1  {
   right: 75px;
-
 }
 .div1 .linksvg2 {
   right: 25px;
 }
+.div1 .linksvg1 {
+  display: inline-block; /* Đảm bảo rằng phần tử là khối và có thể nhận click */
+}
+
 .div2 {
     background-color: white;
     height: 100px;

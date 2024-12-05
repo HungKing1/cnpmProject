@@ -37,8 +37,26 @@ function changeImg(nameClick) {
 function submitForm(event) {
     event.preventDefault();
     let email = document.getElementById('getEmail').value;
+
     localStorage.setItem('email', email);
     window.location.href = './continue-log-in.html';
+}
+
+function submitForm(event) {
+    event.preventDefault();
+    let email = document.getElementById('getEmail').value;
+    let errorEmail = document.getElementById('error-email'); 
+
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+    // Kiểm tra email
+    if (emailPattern.test(email)) {
+        localStorage.setItem('email', email);
+        window.location.href = './continue-log-in.html';
+    } else {
+        errorEmail.textContent = 'Please enter a valid email address'; // Cập nhật thông báo lỗi
+        errorEmail.style.display = 'block'; // Hiển thị thông báo lỗi
+    }
 }
 
 window.onload = function() {

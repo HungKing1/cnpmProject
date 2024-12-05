@@ -49,10 +49,19 @@ body {
     border: solid gray 1px;
     cursor: pointer;
 }
+.error-nhap-email {
+    height: 20px;
+    width: auto;
+    color: red;
+    /* background-color: green; */
+    font: 14px;
+    /* display: block; */
+}
 .button-login {
     width: 432px;
     height: 44px;
     margin: 21px 0px;
+    margin-top: 0px;
     border-radius: 10px;
     background-color: #c5aa76;
     border: solid gray 1px;
